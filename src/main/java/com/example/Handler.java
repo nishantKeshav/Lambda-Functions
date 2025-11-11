@@ -51,3 +51,6 @@ public class Handler implements RequestHandler<APIGatewayV2HTTPEvent, APIGateway
         return response;
     }
 }
+
+// mvn dependency:copy-dependencies "-DoutputDirectory=./lambda-layer/java/lib"
+// Compress-Archive -Path .\* -DestinationPath ..\my-java-libs-V2.zip
